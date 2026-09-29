@@ -171,7 +171,7 @@ function mark(text, q) {
 
 function render() {
   const q = $("q").value.trim();
-  const hit = s => !q || [s.zh, s.en, s.intro || "", String(s.n)].some(v => v.toLowerCase().includes(q.toLowerCase()));
+  const hit = s => !q || [s.zh, s.en, s.intro || "", s.intro_en || "", String(s.n)].some(v => v.toLowerCase().includes(q.toLowerCase()));
   const rows = S.filter(s => (year === "all" || s.y == year) && hit(s));
   const open = location.hash.match(/^#(\d+)$/);
   let h = "", cur = null;
@@ -181,14 +181,17 @@ function render() {
       const n = rows.filter(r => r.y === cur).length;
       h += `<h2 class="year">${cur}<span>${L(n + " 期", n + (n > 1 ? " sessions" : " session"))}</span></h2>`;
     }
-    const isOpen = (open && +open[1] === s.n) || (q && s.intro && s.intro.toLowerCase().includes(q.toLowerCase()) && !s.zh.toLowerCase().includes(q.toLowerCase()));
+    const isOpen = (open && +open[1] === s.n) || (q && [s.intro, s.intro_en].some(v => v && v.toLowerCase().includes(q.toLowerCase())) && ![s.zh, s.en].some(v => v.toLowerCase().includes(q.toLowerCase())));
     const title = L(s.zh, s.en), alt = L(s.en, s.zh);
     h += `<details class="s" id="${s.n}"${isOpen ? " open" : ""}><summary><span class="num">${s.n}</span><span class="t">${mark(title, q)}<small>${mark(alt, q)}</small></span><span class="chev" aria-hidden="true">›</span></summary>`;
     h += `<div class="body"><div>`;
     if (s.img) h += `<img src="${s.img}" alt="" loading="lazy">`;
     if (s.intro) {
-      if (lang === "en") h += `<p class="note">Description in Chinese:</p>`;
-      h += `<p lang="zh">${mark(s.intro, q)}</p>`;
+      if (lang === "en" && s.intro_en) h += `<p lang="en">${mark(s.intro_en, q)}</p>`;
+      else {
+        if (lang === "en") h += `<p class="note">Description in Chinese:</p>`;
+        h += `<p lang="zh">${mark(s.intro, q)}</p>`;
+      }
     } else {
       h += `<p class="note">${L("这一期没有文字介绍。", "No description for this session.")}</p>`;
     }

@@ -1,11 +1,12 @@
 /**
  * Contact form backend for yanxia.art.
  *
- * Paste into Extensions → Apps Script of the "yanxia.art messages" Google Sheet,
- * then Deploy → New deployment → Web app (Execute as: Me, Who has access: Anyone).
+ * Deployed as a standalone Apps Script project ("yanxia.art contact"):
+ * Deploy → New deployment → Web app (Execute as: Me, Who has access: Anyone).
  * Each message becomes a row in the sheet and an email to the sheet owner.
  * The owner's address never reaches the browser.
  */
+const SHEET_ID = "1Cs5NaS6kbnVQoMnL6ZrchGvIXpoPDhAMrzH2OX4h0tg";  // "yanxia.art messages"
 const MAX_PER_HOUR = 20;   // crude flood guard across all senders
 
 function doPost(e) {
@@ -23,8 +24,9 @@ function doPost(e) {
   if (count >= MAX_PER_HOUR) return reply_(false, "busy");
   cache.put("count", String(count + 1), 3600);
 
-  SpreadsheetApp.getActiveSpreadsheet().getSheets()[0]
-    .appendRow([new Date(), name, contact, message, clip_(p.lang, 5)]);
+  const sheet = SpreadsheetApp.openById(SHEET_ID).getSheets()[0];
+  if (sheet.getLastRow() === 0) sheet.appendRow(["时间", "称呼", "联系方式", "留言", "语言"]);
+  sheet.appendRow([new Date(), name, contact, message, clip_(p.lang, 5)]);
 
   MailApp.sendEmail({
     to: Session.getEffectiveUser().getEmail(),

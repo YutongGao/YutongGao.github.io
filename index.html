@@ -196,6 +196,7 @@ function render() {
       h += `<p class="note">${L("这一期没有文字介绍。", "No description for this session.")}</p>`;
     }
     const links = [`<a href="#${s.n}" data-copy="${s.n}">${L("本期链接", "Link to this session")}</a>`];
+    if (s.rome) links.push(`<a href="/gaoyutong/rome/">${L("罗马史专栏", "The Rome serial")}</a>`);
     if (s.link) links.push(`<a href="${esc(s.link)}">${L("专题页", "Session page")}</a>`);
     h += `<div class="links">${links.join("")}</div></div></div></details>`;
   });

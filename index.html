@@ -79,6 +79,11 @@ mark{background:color-mix(in oklab,var(--accent) 22%,transparent);color:inherit;
 .about{margin:56px 0 0;padding-top:24px;border-top:2px solid var(--ink);max-width:40em}
 .about h2{font:700 24px var(--serif);margin:0 0 10px}
 .about p{margin:0 0 12px}
+.origin{margin-top:28px;padding-top:18px;border-top:1px solid var(--rule)}
+.origin h3{font:700 20px var(--serif);margin:0 0 2px}
+.origin .when{color:var(--muted);font-size:14px}
+.origin ul{margin:0 0 12px;padding-left:1.4em}
+.t a{color:inherit;text-decoration:none}
 footer{max-width:960px;margin:0 auto;padding:0 24px 40px;color:var(--muted);font-size:13px;display:flex;gap:16px;flex-wrap:wrap}
 footer a{color:var(--muted)}
 
@@ -143,6 +148,24 @@ footer a{color:var(--muted)}
     <h2><span class="zh">关于烟霞</span><span class="en">About Yanxia</span></h2>
     <p class="zh">烟霞是一个线上主题分享活动，2022 年开始，通常在美西时间周五傍晚进行。每期的通知会同时发在微信公众号和 Google 群组。</p>
     <p class="en">Yanxia is an online talk series that began in 2022, usually held on Friday evenings, US Pacific time. Each session is announced on the WeChat account and in the Google Group. Talks are in Chinese.</p>
+    <div class="origin">
+      <h3><span class="zh">重逢，然后分享</span><span class="en">Meeting again, then sharing</span></h3>
+      <p class="when"><span class="zh">写于 2023 年 6 月 19 日，公众号创建六周年</span><span class="en">Written on 19 June 2023, six years after the WeChat account began</span></p>
+      <div class="zh">
+        <p>这个公众号是六年前的今天创建的。当时醉心于历史，尝试将了解到的罗马故事和艺术品总结写下来。从传说中的罗马建城，写到了辛辛纳图斯时期。后来毕业开始找工作，因为种种原因没有机会继续更新，成为一种遗憾。</p>
+        <p>然而对于有趣故事的渴求从未停止。是的，最原始的乐趣：请给我讲个故事吧。我想见到更多，希望分享和聆听让人感动的东西。读书或者看电影遇见精彩的地方，会难以抑制内心的狂喜。如果朋友中有志趣相同的人，分享和听取新的想法自然会带来新的喜悦。相反，没有人可以倾诉的时候，会觉得非常遗憾。如果有这样一个平台，我在遇到无人倾诉的时候，会想着把它记下来，会想着有朝一日，我会把它分享给同样感兴趣的人——单纯的展示事实，而非贩卖观点和焦虑。</p>
+        <p>去年二月份开始，我们尝试组织了一系列线下的主题分享活动，主题大多数是文史哲相关的话题，活动的名字叫做烟霞。很开心能在开放世界中邂逅性格各异、能力独特的朋友们。最近有朋友提议，我们可以通过微信公众号总结一些之前和之后分享的文字内容，而这对于更多的人了解我们的活动非常有帮助。在之后的进程中，我们会尝试更新更多的有趣故事，也许会以历史为主，但不会局限于历史。敬请期待。</p>
+        <p>之后我们大概会做三件事：</p>
+        <ul><li>记录/总结之后每期的分享内容。</li><li>回填之前的分享内容。</li><li>发布一些分享内容周边的故事，延伸阅读题材。</li></ul>
+      </div>
+      <div class="en">
+        <p>This account was started six years ago today. I was absorbed in history then, and tried to write down the Roman stories and artworks I was learning about, from the legendary founding of the city to the time of Cincinnatus. Then I graduated and started looking for work, and for one reason and another never got to carry on. It stayed a regret.</p>
+        <p>But the hunger for good stories never went away. Yes, the oldest pleasure there is: tell me a story. I want to see more, and to share and hear things that move people. When a book or a film hits something wonderful, I can hardly contain the joy. If friends share the same interests, trading new ideas brings new delight; when there is no one to tell, it feels like a real loss. With a place like this, when there is no one to tell, I can write it down, and one day share it with people who care about the same things: simply setting out what happened, not selling opinions or anxiety.</p>
+        <p>Starting in February last year, we tried organising a series of in-person themed talks, mostly on literature, history and philosophy, under the name Yanxia. It has been a joy to meet friends of every temperament and talent out in the open world. Recently a friend suggested we use the WeChat account to write up talks past and future, which would help many more people learn about what we do. From here on we will try to post more good stories, mostly history perhaps, but not only history. Stay tuned.</p>
+        <p>From now on we plan to do three things:</p>
+        <ul><li>Write up each talk after it happens.</li><li>Fill in the talks that came before.</li><li>Post stories around the talks, and further reading.</li></ul>
+      </div>
+    </div>
   </section>
 </main>
 <footer>
@@ -195,7 +218,7 @@ function render() {
     } else {
       h += `<p class="note">${L("这一期没有文字介绍。", "No description for this session.")}</p>`;
     }
-    const links = [`<a href="#${s.n}" data-copy="${s.n}">${L("本期链接", "Link to this session")}</a>`];
+    const links = [`<a href="/s/${s.n}/">${L("打开本期页面", "Open this session")}</a>`, `<a href="#${s.n}" data-copy="${s.n}">${L("复制链接", "Copy link")}</a>`];
     if (s.rome) links.push(`<a href="/gaoyutong/rome/">${L("罗马史专栏", "The Rome serial")}</a>`);
     if (s.link) links.push(`<a href="${esc(s.link)}">${L("专题页", "Session page")}</a>`);
     h += `<div class="links">${links.join("")}</div></div></div></details>`;
@@ -224,8 +247,8 @@ $("list").addEventListener("click", e => {
   const a = e.target.closest("[data-copy]");
   if (!a) return;
   e.preventDefault();
-  history.replaceState(null, "", "#" + a.dataset.copy);
-  navigator.clipboard && navigator.clipboard.writeText(location.href).then(() => { a.textContent = L("已复制", "Copied"); });
+  const url = location.origin + "/s/" + a.dataset.copy + "/";
+  navigator.clipboard && navigator.clipboard.writeText(url).then(() => { a.textContent = L("已复制", "Copied"); });
 });
 addEventListener("hashchange", () => { const el = document.getElementById(location.hash.slice(1)); if (el && el.tagName === "DETAILS") { el.open = true; el.scrollIntoView({block: "start"}); } });
 

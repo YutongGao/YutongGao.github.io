@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第 14 期：鲲鹏安知鹪鹩 · 烟霞 Yanxia</title>
+<meta name="description" content="本次分享讲围绕晋司空张华进行分享、分析和讨论。   来自《博物志》小故事，猜猜这几个描述的是什么科学/常识内容？  • 今人梳头脱著衣时，有随梳解结有光者，亦有咤声。 • 地常动不止，譬如人在舟而坐，舟行而人不觉。天地四方皆海水相通，地在其中盖无几也。 • 昔日南貢四象，各有雌雄">
+<link rel="canonical" href="https://yanxia.art/s/14/">
+<meta property="og:title" content="烟霞第 14 期：鲲鹏安知鹪鹩">
+<meta property="og:description" content="本次分享讲围绕晋司空张华进行分享、分析和讨论。   来自《博物志》小故事，猜猜这几个描述的是什么科学/常识内容？  • 今人梳头脱著衣时，有随梳解结有光者，亦有咤声。 • 地常动不止，譬如人在舟而坐，舟行而人不觉。天地四方皆海水相通，地在其中盖无几也。 • 昔日南貢四象，各有雌雄">
+<script src="/analytics.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EEF0EB; --ink:#1E2B38; --muted:#5E6B75; --rule:#C9CFC6; --card:#F6F7F3; --accent:#8E3F5C; --link:#2B4C7E;
+  --serif:"Noto Serif SC","Songti SC","STSong",serif;
+  --sans:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#141A21;--ink:#E3E7E0;--muted:#98A3AC;--rule:#2E3943;--card:#19212A;--accent:#D98AA6;--link:#8FB0E0}}
+:root[data-theme="dark"]{--paper:#141A21;--ink:#E3E7E0;--muted:#98A3AC;--rule:#2E3943;--card:#19212A;--accent:#D98AA6;--link:#8FB0E0}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--link)}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+[data-lang="en"] .zh,[data-lang="zh"] .en{display:none}
+
+.top{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--rule)}
+.top-in{max-width:960px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:24px}
+.brand{font:700 20px var(--serif);text-decoration:none;color:var(--ink);margin-right:auto;letter-spacing:.04em}
+.top nav{display:flex;gap:20px}
+.top nav a{color:var(--ink);text-decoration:none;font-size:15px}
+.top nav a:hover{color:var(--accent)}
+.top nav a.me{padding-left:20px;border-left:1px solid var(--rule)}
+.lang{font:500 14px var(--sans);color:var(--ink);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:4px 14px;cursor:pointer}
+.lang:hover{border-color:var(--ink)}
+
+main{max-width:960px;margin:0 auto;padding:0 24px 96px}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:40px;align-items:center;padding:56px 0 40px;border-bottom:2px solid var(--ink)}
+h1{font:700 clamp(40px,7vw,64px)/1.1 var(--serif);margin:0 0 6px;letter-spacing:.06em}
+.sub{font:500 16px var(--sans);color:var(--accent);margin:0 0 18px;letter-spacing:.02em}
+.lede{margin:0 0 12px;max-width:34em;font-size:17px}
+.stats{display:flex;gap:28px;margin:22px 0 0;padding:0;list-style:none}
+.stats b{display:block;font:700 28px/1.1 var(--serif)}
+.stats span{font-size:13px;color:var(--muted)}
+.join{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:16px;text-align:center}
+.join img{width:100%;max-width:170px;aspect-ratio:1;display:block;margin:0 auto 10px;border-radius:4px;background:#fff}
+.join p{margin:0 0 6px;font-size:13px;color:var(--muted);line-height:1.5}
+.join a{font-size:14px}
+
+.controls{position:sticky;top:57px;z-index:4;background:var(--paper);display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;padding:16px 0;border-bottom:1px solid var(--rule)}
+.controls input{flex:1 1 220px;font:inherit;font-size:15px;color:var(--ink);background:var(--card);border:1px solid var(--rule);border-radius:999px;padding:7px 16px;min-width:0}
+.controls input:focus{outline:none;border-color:var(--ink)}
+.years{display:flex;gap:6px;flex-wrap:wrap}
+.years button{font:500 14px var(--sans);color:var(--muted);background:transparent;border:1px solid transparent;border-radius:999px;padding:4px 12px;cursor:pointer}
+.years button:hover{color:var(--ink)}
+.years button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.count{font-size:13px;color:var(--muted);width:100%}
+
+.year{font:700 22px var(--serif);margin:36px 0 4px;display:flex;align-items:baseline;gap:12px}
+.year span{font:400 14px var(--sans);color:var(--muted)}
+.s{border-bottom:1px solid var(--rule);scroll-margin-top:140px}
+.s summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:64px minmax(0,1fr) 20px;gap:14px;align-items:baseline;padding:14px 0}
+.s summary::-webkit-details-marker{display:none}
+.num{font:700 18px var(--serif);color:var(--accent);font-variant-numeric:tabular-nums}
+.t{font:700 18px/1.45 var(--serif)}
+.t small{display:block;font:400 14px/1.5 var(--sans);color:var(--muted);margin-top:2px}
+.chev{color:var(--muted);transition:transform .15s;justify-self:end}
+.s[open] .chev{transform:rotate(90deg)}
+.s summary:hover .t{color:var(--accent)}
+.body{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;padding:0 0 22px}
+.body > div{grid-column:2;max-width:40em}
+.body img{max-width:min(100%,420px);border-radius:6px;display:block;margin:0 0 14px}
+.body p{margin:0 0 10px;white-space:pre-line;font-size:15px}
+.body .note{color:var(--muted);font-size:13px;font-style:italic}
+.body .links{display:flex;gap:16px;font-size:14px}
+.empty{color:var(--muted);padding:40px 0;text-align:center}
+mark{background:color-mix(in oklab,var(--accent) 22%,transparent);color:inherit;border-radius:2px}
+
+.about{margin:56px 0 0;padding-top:24px;border-top:2px solid var(--ink);max-width:40em}
+.about h2{font:700 24px var(--serif);margin:0 0 10px}
+.about p{margin:0 0 12px}
+.origin{margin-top:28px;padding-top:18px;border-top:1px solid var(--rule)}
+.origin h3{font:700 20px var(--serif);margin:0 0 2px}
+.origin .when{color:var(--muted);font-size:14px}
+.origin ul{margin:0 0 12px;padding-left:1.4em}
+.t a{color:inherit;text-decoration:none}
+footer{max-width:960px;margin:0 auto;padding:0 24px 40px;color:var(--muted);font-size:13px;display:flex;gap:16px;flex-wrap:wrap}
+footer a{color:var(--muted)}
+
+@media (max-width:720px){
+  .top-in{padding:10px 16px;gap:14px}
+  .top nav{gap:12px;font-size:14px}
+  .top nav a[href='#about']{display:none}
+  .top nav a.me{padding-left:12px}
+  main{padding:0 16px 72px}
+  .hero{grid-template-columns:1fr;gap:24px;padding:32px 0 28px}
+  .join{display:grid;grid-template-columns:110px 1fr;gap:14px;text-align:left;align-items:center}
+  .join img{margin:0}
+  .controls{top:53px}
+  .s summary{grid-template-columns:44px minmax(0,1fr) 16px;gap:10px}
+  .num{font-size:16px}
+  .t{font-size:16px}
+  .body{grid-template-columns:1fr}
+  .body > div{grid-column:1}
+  footer{padding:0 16px 32px}
+}
+
+.sess{max-width:42em;padding:40px 0 0}
+.crumb{font-size:14px;color:var(--muted);margin:0 0 10px}
+.crumb a{color:var(--muted)}
+.sess h1{font:700 clamp(28px,5vw,42px)/1.3 var(--serif);letter-spacing:0;margin:0 0 6px}
+.sess .alt{color:var(--muted);font-size:17px;margin:0 0 6px}
+.sess .meta{color:var(--accent);font-size:15px;margin:0 0 28px}
+.sess .cover{max-width:min(100%,460px);border-radius:8px;display:block;margin:0 0 24px}
+.sess .intro p{white-space:pre-line;margin:0 0 12px;font-size:17px}
+.part{margin-top:44px;padding-top:18px;border-top:2px solid var(--ink)}
+.part h2{font:700 13px var(--sans);letter-spacing:.12em;color:var(--accent);margin:0 0 6px;text-transform:uppercase}
+.part h3{font:700 22px/1.4 var(--serif);margin:0 0 4px}
+.part .by{color:var(--muted);font-size:14px;margin:0 0 18px}
+.part p{margin:0 0 1em;font-size:16px;text-align:justify}
+.part h4{font:700 18px/1.5 var(--serif);margin:1.5em 0 .5em}
+.part p.cap{color:var(--muted);font-size:14px;text-align:center}
+.ennote{background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:10px 14px;color:var(--muted);font-size:15px;margin:28px 0 0}
+.none{color:var(--muted);font-style:italic}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:48px}
+.pn a{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:12px 14px}
+.pn a:hover{border-color:var(--ink)}
+.pn small{display:block;color:var(--muted);font-size:13px}
+.pn .r{text-align:right;grid-column:2}
+</style>
+</head>
+<body data-lang="zh">
+<header class="top"><div class="top-in">
+  <a class="brand" href="/"><span class="zh">烟霞</span><span class="en">Yanxia</span></a>
+  <nav aria-label="Sections">
+    <a href="/#archive"><span class="zh">往期</span><span class="en">Archive</span></a>
+    <a href="/#about"><span class="zh">关于</span><span class="en">About</span></a>
+    <a href="/travels/"><span class="zh">旅行</span><span class="en">Travels</span></a>
+    <a href="/gaoyutong/" class="me"><span class="zh">关于作者</span><span class="en">About the author</span></a>
+  </nav>
+  <button class="lang" id="langBtn" type="button">EN</button>
+</div></header>
+<main><article class="sess">
+  <p class="crumb"><a href="/#14"><span class="zh">往期</span><span class="en">Archive</span></a> · 2022</p>
+  <h1><span class="zh">鲲鹏安知鹪鹩</span><span class="en">What Does the Great Roc Know of the Wren?</span></h1>
+  <p class="alt"><span class="zh">What Does the Great Roc Know of the Wren?</span><span class="en">鲲鹏安知鹪鹩</span></p>
+  <p class="meta"><span class="zh">烟霞第 14 期 · 2022 年</span><span class="en">Yanxia No. 14 · 2022</span></p>
+  <img class="cover" src="/img/s/14.webp" alt="">
+  <div class="intro"><div class="zh"><p lang="zh">本次分享讲围绕晋司空张华进行分享、分析和讨论。
+
+
+来自《博物志》小故事，猜猜这几个描述的是什么科学/常识内容？
+
+• 今人梳头脱著衣时，有随梳解结有光者，亦有咤声。
+• 地常动不止，譬如人在舟而坐，舟行而人不觉。天地四方皆海水相通，地在其中盖无几也。
+• 昔日南貢四象，各有雌雄。其一雄死於九真，乃至南海百有餘日，其雌塗土著身，不飲食，穴草，長史問其所以，聞之輒流涕。
+• 旧洛阳字作水边各，汉火行也，忌水，故去水而加佳。又魏于行次为土，水得土而流，土得水而柔，故复去佳加水，変雒为洛焉。
+ 
+
+一些分享中可以带着思考的问题：
+
+• 《博物志》的作者张华，为什么能从一个牧羊娃，在“上品无寒门，下品无势族”的西晋，做到了国家的实际决策者？
+• 他是怎么跨越日趋森严的士庶区隔，得到自上而下的认可和接受的？
+• 寒门出身，是否影响了张华的交游和决策？
+• 除了《博物志》之外，张华还有留下了什么其他的作品？
+• 是什么让晋武帝铁了心立“何不食肉糜”的傻儿子做国家的继承人？
+ 
+
+分享之后可以讨论的问题：
+
+• 西晋为什么无法维持长期的稳定统治？
+• 张华是否有一个一贯的政治立场，如果有的话，是什么？
+• 张华是否有可能化解晋惠帝的老婆和儿子（贾南风与愍怀太子）之间的矛盾？
+• 西晋时期南北士人的分歧为什么难以达成和解？
+• 玄学清谈和空谈误国之间有必然的关系么？
+ 
+
+相关资料：
+唐·房玄龄《晋书》
+权家玉《魏晋政治与皇权传递》
+罗宗强《玄学与魏晋士人心态》
+仇鹿鸣《魏晋之际的政治权力与家族网络》</p></div><div class="en"><p lang="en">This session centres on Zhang Hua, Minister of Works of the Jin, with a talk, analysis and discussion.
+
+
+Here are some short passages from the Treatise on Curiosities (Bowuzhi). Can you guess what scientific facts or common knowledge they describe?
+
+• When people today comb their hair or take off their clothes, sometimes there are sparks as the comb undoes the knots, and sometimes a crackling sound.
+• The earth moves constantly and never stops, just as a person sitting in a boat does not feel the boat moving. On all four sides of heaven and earth the seas are connected, and the land in their midst is only small.
+• Long ago Rinan sent four elephants as tribute, each with its mate. One of the males died in Jiuzhen. More than a hundred days later, when they reached Nanhai, its mate smeared mud over its body, would neither eat nor drink, and burrowed into the grass. When the chief clerk asked about it, the elephant wept as soon as it heard.
+• The &quot;Luo&quot; of Luoyang was once written with the water radical beside 各. The Han ruled by the element of Fire and shunned water, so the water radical was removed and 隹 added. Then the Wei ruled by the element of Earth; water flows when it meets earth, and earth softens when it meets water, so 隹 was removed again and the water radical added, changing 雒 back into 洛.
+
+
+Some questions to keep in mind during the talk:
+
+• How did Zhang Hua, author of the Treatise on Curiosities, rise from shepherd boy to the de facto decision-maker of the state in the Western Jin, an age when &quot;the top ranks held no one of humble birth, and the bottom ranks no one from a powerful clan&quot;?
+• How did he cross the ever more rigid divide between the gentry and commoners and win acceptance and recognition from above and below?
+• Did his humble origins affect Zhang Hua&#x27;s social circle and his decisions?
+• Besides the Treatise on Curiosities, what other works did Zhang Hua leave behind?
+• What made Emperor Wu of Jin so determined to make his foolish son, the one who asked &quot;Why don&#x27;t they eat meat porridge?&quot;, heir to the throne?
+
+
+Questions for discussion after the talk:
+
+• Why was the Western Jin unable to sustain stable rule for long?
+• Did Zhang Hua hold a consistent political position, and if so, what was it?
+• Could Zhang Hua have resolved the conflict between Emperor Hui of Jin&#x27;s wife and his son (Jia Nanfeng and Crown Prince Minhuai)?
+• Why was it so hard to reconcile the divisions between the northern and southern literati of the Western Jin?
+• Is there a necessary link between Xuanxue &quot;pure conversation&quot; and empty talk ruining the state?
+
+
+Related reading:
+Fang Xuanling (Tang), Book of Jin
+Quan Jiayu, Wei–Jin Politics and the Transmission of Imperial Power
+Luo Zongqiang, Xuanxue and the Mentality of Wei–Jin Literati
+Qiu Luming, Political Power and Family Networks in the Wei–Jin Transition</p></div></div>
+  
+  
+  <nav class="pn"><a class="l" href="/s/13/"><small><span class="zh">上一期 · 第 13 期</span><span class="en">Previous · No. 13</span></small><span class="zh">探讨中美关系</span><span class="en">On China–US Relations</span></a><a class="r" href="/s/15/"><small><span class="zh">下一期 · 第 15 期</span><span class="en">Next · No. 15</span></small><span class="zh">芥川龙之介《鼻子》</span><span class="en">Akutagawa Ryūnosuke&#x27;s The Nose</span></a></nav>
+</article></main>
+<footer>
+  <span>© 2022–2026 <span class="zh">烟霞</span><span class="en">Yanxia</span></span>
+  <a href="/gaoyutong/"><span class="zh">网站维护：高宇彤</span><span class="en">Site by Yutong Gao</span></a>
+</footer>
+<script>
+const KEY = "lang";
+let lang;
+try { lang = localStorage.getItem(KEY); } catch (e) {}
+if (lang !== "zh" && lang !== "en") lang = /^zh\b/i.test(navigator.language || "") ? "zh" : "en";
+const btn = document.getElementById("langBtn");
+function apply() { document.body.dataset.lang = lang; document.documentElement.lang = lang === "zh" ? "zh-CN" : "en"; btn.textContent = lang === "zh" ? "EN" : "中文"; }
+btn.addEventListener("click", () => { lang = lang === "zh" ? "en" : "zh"; try { localStorage.setItem(KEY, lang); } catch (e) {} apply(); });
+apply();
+</script>
+</body>
+</html>

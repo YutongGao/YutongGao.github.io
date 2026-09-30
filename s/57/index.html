@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>第 57 期：旧金山从何而来 · 烟霞 Yanxia</title>
+<meta name="description" content="本期内容比较轻松，希望介绍一点点旧金山背后的历史。具体来说主要想从地图入手，简单介绍旧金山这个城市和各个街区、景点背后的故事：旧金山是如何从最早的殖民者据点，一点点扩展成现在的样貌，中间有哪些大事件，这些事件对旧金山当下的城市分布有什么影响。   一些可以探讨的问题： 旧金山为什">
+<link rel="canonical" href="https://yanxia.art/s/57/">
+<meta property="og:title" content="烟霞第 57 期：旧金山从何而来">
+<meta property="og:description" content="本期内容比较轻松，希望介绍一点点旧金山背后的历史。具体来说主要想从地图入手，简单介绍旧金山这个城市和各个街区、景点背后的故事：旧金山是如何从最早的殖民者据点，一点点扩展成现在的样貌，中间有哪些大事件，这些事件对旧金山当下的城市分布有什么影响。   一些可以探讨的问题： 旧金山为什">
+<script src="/analytics.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EEF0EB; --ink:#1E2B38; --muted:#5E6B75; --rule:#C9CFC6; --card:#F6F7F3; --accent:#8E3F5C; --link:#2B4C7E;
+  --serif:"Noto Serif SC","Songti SC","STSong",serif;
+  --sans:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#141A21;--ink:#E3E7E0;--muted:#98A3AC;--rule:#2E3943;--card:#19212A;--accent:#D98AA6;--link:#8FB0E0}}
+:root[data-theme="dark"]{--paper:#141A21;--ink:#E3E7E0;--muted:#98A3AC;--rule:#2E3943;--card:#19212A;--accent:#D98AA6;--link:#8FB0E0}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--link)}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+[data-lang="en"] .zh,[data-lang="zh"] .en{display:none}
+
+.top{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--rule)}
+.top-in{max-width:960px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:24px}
+.brand{font:700 20px var(--serif);text-decoration:none;color:var(--ink);margin-right:auto;letter-spacing:.04em}
+.top nav{display:flex;gap:20px}
+.top nav a{color:var(--ink);text-decoration:none;font-size:15px}
+.top nav a:hover{color:var(--accent)}
+.top nav a.me{padding-left:20px;border-left:1px solid var(--rule)}
+.lang{font:500 14px var(--sans);color:var(--ink);background:transparent;border:1px solid var(--rule);border-radius:999px;padding:4px 14px;cursor:pointer}
+.lang:hover{border-color:var(--ink)}
+
+main{max-width:960px;margin:0 auto;padding:0 24px 96px}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:40px;align-items:center;padding:56px 0 40px;border-bottom:2px solid var(--ink)}
+h1{font:700 clamp(40px,7vw,64px)/1.1 var(--serif);margin:0 0 6px;letter-spacing:.06em}
+.sub{font:500 16px var(--sans);color:var(--accent);margin:0 0 18px;letter-spacing:.02em}
+.lede{margin:0 0 12px;max-width:34em;font-size:17px}
+.stats{display:flex;gap:28px;margin:22px 0 0;padding:0;list-style:none}
+.stats b{display:block;font:700 28px/1.1 var(--serif)}
+.stats span{font-size:13px;color:var(--muted)}
+.join{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:16px;text-align:center}
+.join img{width:100%;max-width:170px;aspect-ratio:1;display:block;margin:0 auto 10px;border-radius:4px;background:#fff}
+.join p{margin:0 0 6px;font-size:13px;color:var(--muted);line-height:1.5}
+.join a{font-size:14px}
+
+.controls{position:sticky;top:57px;z-index:4;background:var(--paper);display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;padding:16px 0;border-bottom:1px solid var(--rule)}
+.controls input{flex:1 1 220px;font:inherit;font-size:15px;color:var(--ink);background:var(--card);border:1px solid var(--rule);border-radius:999px;padding:7px 16px;min-width:0}
+.controls input:focus{outline:none;border-color:var(--ink)}
+.years{display:flex;gap:6px;flex-wrap:wrap}
+.years button{font:500 14px var(--sans);color:var(--muted);background:transparent;border:1px solid transparent;border-radius:999px;padding:4px 12px;cursor:pointer}
+.years button:hover{color:var(--ink)}
+.years button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.count{font-size:13px;color:var(--muted);width:100%}
+
+.year{font:700 22px var(--serif);margin:36px 0 4px;display:flex;align-items:baseline;gap:12px}
+.year span{font:400 14px var(--sans);color:var(--muted)}
+.s{border-bottom:1px solid var(--rule);scroll-margin-top:140px}
+.s summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:64px minmax(0,1fr) 20px;gap:14px;align-items:baseline;padding:14px 0}
+.s summary::-webkit-details-marker{display:none}
+.num{font:700 18px var(--serif);color:var(--accent);font-variant-numeric:tabular-nums}
+.t{font:700 18px/1.45 var(--serif)}
+.t small{display:block;font:400 14px/1.5 var(--sans);color:var(--muted);margin-top:2px}
+.chev{color:var(--muted);transition:transform .15s;justify-self:end}
+.s[open] .chev{transform:rotate(90deg)}
+.s summary:hover .t{color:var(--accent)}
+.body{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;padding:0 0 22px}
+.body > div{grid-column:2;max-width:40em}
+.body img{max-width:min(100%,420px);border-radius:6px;display:block;margin:0 0 14px}
+.body p{margin:0 0 10px;white-space:pre-line;font-size:15px}
+.body .note{color:var(--muted);font-size:13px;font-style:italic}
+.body .links{display:flex;gap:16px;font-size:14px}
+.empty{color:var(--muted);padding:40px 0;text-align:center}
+mark{background:color-mix(in oklab,var(--accent) 22%,transparent);color:inherit;border-radius:2px}
+
+.about{margin:56px 0 0;padding-top:24px;border-top:2px solid var(--ink);max-width:40em}
+.about h2{font:700 24px var(--serif);margin:0 0 10px}
+.about p{margin:0 0 12px}
+.origin{margin-top:28px;padding-top:18px;border-top:1px solid var(--rule)}
+.origin h3{font:700 20px var(--serif);margin:0 0 2px}
+.origin .when{color:var(--muted);font-size:14px}
+.origin ul{margin:0 0 12px;padding-left:1.4em}
+.t a{color:inherit;text-decoration:none}
+footer{max-width:960px;margin:0 auto;padding:0 24px 40px;color:var(--muted);font-size:13px;display:flex;gap:16px;flex-wrap:wrap}
+footer a{color:var(--muted)}
+
+@media (max-width:720px){
+  .top-in{padding:10px 16px;gap:14px}
+  .top nav{gap:12px;font-size:14px}
+  .top nav a[href='#about']{display:none}
+  .top nav a.me{padding-left:12px}
+  main{padding:0 16px 72px}
+  .hero{grid-template-columns:1fr;gap:24px;padding:32px 0 28px}
+  .join{display:grid;grid-template-columns:110px 1fr;gap:14px;text-align:left;align-items:center}
+  .join img{margin:0}
+  .controls{top:53px}
+  .s summary{grid-template-columns:44px minmax(0,1fr) 16px;gap:10px}
+  .num{font-size:16px}
+  .t{font-size:16px}
+  .body{grid-template-columns:1fr}
+  .body > div{grid-column:1}
+  footer{padding:0 16px 32px}
+}
+
+.sess{max-width:42em;padding:40px 0 0}
+.crumb{font-size:14px;color:var(--muted);margin:0 0 10px}
+.crumb a{color:var(--muted)}
+.sess h1{font:700 clamp(28px,5vw,42px)/1.3 var(--serif);letter-spacing:0;margin:0 0 6px}
+.sess .alt{color:var(--muted);font-size:17px;margin:0 0 6px}
+.sess .meta{color:var(--accent);font-size:15px;margin:0 0 28px}
+.sess .cover{max-width:min(100%,460px);border-radius:8px;display:block;margin:0 0 24px}
+.sess .intro p{white-space:pre-line;margin:0 0 12px;font-size:17px}
+.part{margin-top:44px;padding-top:18px;border-top:2px solid var(--ink)}
+.part h2{font:700 13px var(--sans);letter-spacing:.12em;color:var(--accent);margin:0 0 6px;text-transform:uppercase}
+.part h3{font:700 22px/1.4 var(--serif);margin:0 0 4px}
+.part .by{color:var(--muted);font-size:14px;margin:0 0 18px}
+.part p{margin:0 0 1em;font-size:16px;text-align:justify}
+.part h4{font:700 18px/1.5 var(--serif);margin:1.5em 0 .5em}
+.part p.cap{color:var(--muted);font-size:14px;text-align:center}
+.ennote{background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:10px 14px;color:var(--muted);font-size:15px;margin:28px 0 0}
+.none{color:var(--muted);font-style:italic}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:48px}
+.pn a{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:12px 14px}
+.pn a:hover{border-color:var(--ink)}
+.pn small{display:block;color:var(--muted);font-size:13px}
+.pn .r{text-align:right;grid-column:2}
+</style>
+</head>
+<body data-lang="zh">
+<header class="top"><div class="top-in">
+  <a class="brand" href="/"><span class="zh">烟霞</span><span class="en">Yanxia</span></a>
+  <nav aria-label="Sections">
+    <a href="/#archive"><span class="zh">往期</span><span class="en">Archive</span></a>
+    <a href="/#about"><span class="zh">关于</span><span class="en">About</span></a>
+    <a href="/travels/"><span class="zh">旅行</span><span class="en">Travels</span></a>
+    <a href="/gaoyutong/" class="me"><span class="zh">关于作者</span><span class="en">About the author</span></a>
+  </nav>
+  <button class="lang" id="langBtn" type="button">EN</button>
+</div></header>
+<main><article class="sess">
+  <p class="crumb"><a href="/#57"><span class="zh">往期</span><span class="en">Archive</span></a> · 2023</p>
+  <h1><span class="zh">旧金山从何而来</span><span class="en">Where San Francisco Came From</span></h1>
+  <p class="alt"><span class="zh">Where San Francisco Came From</span><span class="en">旧金山从何而来</span></p>
+  <p class="meta"><span class="zh">烟霞第 57 期 · 2023 年</span><span class="en">Yanxia No. 57 · 2023</span></p>
+  
+  <div class="intro"><div class="zh"><p lang="zh">本期内容比较轻松，希望介绍一点点旧金山背后的历史。具体来说主要想从地图入手，简单介绍旧金山这个城市和各个街区、景点背后的故事：旧金山是如何从最早的殖民者据点，一点点扩展成现在的样貌，中间有哪些大事件，这些事件对旧金山当下的城市分布有什么影响。
+
+
+一些可以探讨的问题：
+旧金山为什么叫『旧金山』？
+为什么旧金山Market Street两侧街道完全对不齐？
+金门公园是在模仿纽约中央公园么？
+为什么旧金山这么多陡峭的斜坡道路？
+旧金山为什么是世界上最著名的LGBTQ 人群聚居地？
+大地震对现在的旧金山还有什么影响？
+旧金山为什么没有高架和高速，几乎全是local？</p></div><div class="en"><p lang="en">This session is on the lighter side: a little of the history behind San Francisco. Specifically, starting from maps, I&#x27;d like to give a brief introduction to the stories behind the city and its neighbourhoods and sights: how San Francisco grew bit by bit from an early colonial outpost into what it is today, what major events happened along the way, and how those events have shaped the layout of the city today.
+
+Some questions we can explore:
+Why is San Francisco called &quot;Jiujinshan&quot;, the &quot;Old Gold Mountain&quot;, in Chinese?
+Why do the streets on either side of Market Street not line up at all?
+Is Golden Gate Park an imitation of New York&#x27;s Central Park?
+Why does San Francisco have so many steep streets?
+Why is San Francisco the world&#x27;s most famous home for LGBTQ people?
+What effects does the great earthquake still have on San Francisco today?
+Why does San Francisco have no elevated roads or freeways, with almost everything local streets?</p></div></div>
+  <p class="ennote en">The notes below are in Chinese, as the talks are.</p>
+  <section class="part"><h2><span class="zh">预告</span><span class="en">Announcement</span></h2><h3>旧金山</h3><p class="by">2023-07-25</p><p>旧金山从何而来：本期内容比较轻松，希望介绍一点点旧金山背后的历史。具体来说主要想从地图入手，简单介绍旧金山这个城市和各个街区、景点背后的故事：旧金山是如何从最早的殖民者据点，一点点扩展成现在的样貌，中间有哪些大事件，这些事件对旧金山当下的城市分布有什么影响。</p>
+<p>一些可以探讨的问题：</p>
+<p>为什么旧金山这么多陡峭的斜坡道路？</p>
+<p>为什么旧金山Market Street两侧街道完全对不齐？</p>
+<p>旧金山为什么叫『旧金山』？</p>
+<p>金门公园是在模仿纽约中央公园么？背后有什么有趣的历史？</p>
+<p>旧金山为什么是世界上最著名的LGBTQ 人群聚居地？</p>
+<p>大地震对现在的旧金山还有什么影响？</p>
+<p>旧金山为什么没有高架和高速，几乎全是local？</p>
+<p class="cap">Market Street</p>
+<p class="cap">淘金热</p>
+<p class="cap">SF供水系统</p>
+<p class="cap">1906大地震</p></section><section class="part"><h2><span class="zh">分享总结</span><span class="en">Notes from the session</span></h2><h3>多图 | 烟霞第五十七期分享回顾：《旧金山从何而来：从城市地理看旧金山历史》</h3><p class="by">2023-07-31　Wendao</p><p>以下文章是本周烟霞Nebula的主题分享《旧金山从何而来：从城市地理看旧金山历史》的讲稿和活动记录</p>
+<p>旧金山最古老的建筑在哪儿？</p>
+<p>1769年西班牙探险小队来SF之前，这里居住着Ohlone人。他们分布范围很广，而且因为加州南部和墨西哥北部都非常干旱炎热，墨西哥人口也主要分布在中部的高原区域，所以早在那时候，旧金山湾区就已经是墨西哥以北人口分布最密集的地方了。后来等到西班牙人就来了，原住民好日子就到头了。</p>
+<p>（Ohlone部落和他们的邻居）</p>
+<p>西班牙殖民者来到旧金山后，负责殖民的头领跳了两个地方作为据点，一个军事，一个宗教。军事据点是现在SF东北角的Presidio，宗教据点就是Mission Delores。见下图圈出来的地方：</p>
+<p>（Presidio区和Mission District现在的位置）</p>
+<p>Presidio本身就是堡垒的意思。因为正对着金门海峡（金门大桥和金门公园都是因金门海峡而得名），这里交通位置非常重要，因此，殖民者先在这儿修建了一个据点。但其实没有什么堡垒，最多是修建了一个兵营：</p>
+<p>（最早的Presidio，示意图）</p>
+<p>Presidio后来一直被军方控制着，大地震时期容纳了很多难民。近些年Presidio从军方手中移交到了一个trust fund，开始自负盈亏。这个区域靠海岸的部分交给了NPS管理，也就是负责管理国家公园的机构。现在Presidio区已经成了一个大型城市花园，里面有各种公共娱乐设施。也是每年SF航空秀，舰队飞行表演的观景点。推荐从艺术宫路过金门沙滩徒步到金门大桥，或者走过大桥到对面俯瞰大桥，一路风景非常优美。</p>
+<p>另一个据点是Mission Delores，这是SF最早的教堂，居民也大都住在这附近，后来这块就慢慢变成了现在Mission District，也就是地图右下画圈的这部分。教堂本身一直从1776年存留到了现在，是现在SF现存历史最久的建筑。如果大家去现场的话，注意不是附近这个富丽堂皇的大教堂，而是隔壁这个比较朴素的Old Mission。</p>
+<p>（1856拍摄的Old Mission）</p>
+<p>（现在的Old Mission，左边）</p>
+<p class="cap">黄金国的发现</p>
+<p>SF作为一个殖民据点，一开始属于西班牙的上加利福尼亚省，后来墨西哥独立，再到1848被美国抢走，但其实人口一直只有不到200人，只是一个小的聚居点。直到那件事的发生，迅猛而热烈地重塑了旧金山的城市面貌：淘金热Gold Rush。</p>
+<p>（最早发现金子的Sutter&#x27;s Mill在图中Coloma附近）</p>
+<p>淘金热开始于January 24, 1848，一个叫James W Marshall的人在现在的Sacramento东北方向（如上图）发现了金子，第二天就被手下的雇农泄露了消息，消息瞬间传开，后来慢慢传遍全国后来甚至传遍全世界。短短几年时间内所有人争先恐后的涌向旧金山，因为谁也不知道有多少金子，很有可能你去晚了，表层金子就挖完了（后来确实也只有早期的淘金者真的发财了，去得晚的很多是亏本的）。这让旧金山的人口在五年内从200人暴增到36000人，整个城市几乎是一夜之间被建立起来了。</p>
+<p>当时淘金者有多着急呢？他们甚至来不及安顿自己的船，直接把船丢在岸边就动身淘金去了，这些船互相撞击慢慢都沉没了（rotton row）以至于现在SF靠海的那些街区其实都是填埋了这些破船后造出来的新陆地。</p>
+<p>SF原本的海岸线是没有平地的。你只要从SF海边往里面走，等你走到有开始有明显坡度的地方时，你站的地方就是最早的海岸线。具体可以看下图，绿色的部分就是后来新填埋出来的地面，褐色橘色就是地下的沉船：</p>
+<p>（靠海的平地下全是填埋的沉船）</p>
+<p>关于淘金热这段历史推荐大家看《人类的群星闪耀时》中『黄金国的发现』这一章，主角就是最早发现黄金的James，他的庄园被疯狂的人群抢走，后半辈子都在和政府打官司试图要回自己的土地和赔偿，还是很凄惨的。这里给大家出个思考题：如果穿越回1848年第一个发现了黄金，你会怎么最大化的赚钱？注意这时候没有政府没有什么法律公权力和规则意识。</p>
+<p>（华裔淘金者）</p>
+<p>上边这张图是当时拍摄的淘金者，大家可以看到有华人面孔，我们都知道旧金山华人非常多，他们最早涌入旧金山就是在淘金热时期，后来华人在这里建立了北美最大的唐人街（下图）。意大利移民建立了一系列渔业生意，成了后来的渔人码头。现在的更多作为旅游景点开放。</p>
+<p>（渔人码头和中国城）</p>
+<p>正如我们之前课本中学到的那样，淘金热中真正发财的不是淘金工人，而是给这些涌入的人口提供服务的商人们，比如Levi’s牛仔裤的创始人Lev就是靠在旧金山卖牛仔工作服发家，后来发明了蓝色牛仔裤，成立了Levi&#x27;s公司（李维斯牛仔裤），现在的Levi体育场就是他们冠名。</p>
+<p>更有趣的是，Levi体育场现在是旧金山橄榄球队49人的主场，这个49人指的就是淘金者。历史上大部分淘金者是1849年涌入旧金山的，因此Forty-niners指的就是淘金者。一百多年过去了，给淘金者们提供主场服务的还是Levi体育场，这种历史和当下的对照很有意思。</p>
+<p>随着淘金热发了财的商业巨头也对这座新兴城市的规划有着很大的发言权，接下来我们就开始介绍或者说吐槽下旧金山的城市规划。</p>
+<p>认真吐槽旧金山城市规划（尤其是金门公园）</p>
+<p class="cap">（遍布丘陵的旧金山地形图）‍</p>
+<p>我相信每个在旧金山开过车的人都非常想吐槽旧金山那些陡峭的斜坡道路。如果大家看一下上边这张地图你会发现，旧金山几乎全是丘陵，靠海那些平地还是我们之前说的被填埋出来的。现在很多区也是用这个地区山丘的名字来命名的，比如Russian Hill, Nob Hill, Rincon Hill（见上图）。按理说丘陵多应该修建一些环形道路，但是当时的城市规划者完全忽视了这一点，这位大哥就要照搬自己在西班牙看到的棋盘形势的街道，然后强行应用到旧金山。第一位Planner大哥的作品就是现在的Financial District：</p>
+<p>（金融街和Soma区）</p>
+<p>这个时期旧金山发展的动力除了淘金以为，还和他的地理位置分不开。我们知道186x年是中国的鸦片战争，那时候美国是后发工业国家，也开始跃跃欲试进入国际市场，试图扩展自己的贸易和影响力。旧金山就是美国辐射东亚最重要的城市和港口。1853年佩里打开日本国门就是为了给跨太平洋的贸易航线寻找淡水和煤炭补给点。</p>
+<p>（Legion of Hornor荣勋博物馆门口的纪念碑）</p>
+<p>后来日本人主动开始明治维新，他们访问西方世界第一站往往也是旧金山。现在你在SF西北角的荣勋博物馆（Legion of Honor）还能看到一块纪念『咸临丸入港100周年』纪念碑。当时胜海舟（德川幕府海军奉行），福泽谕吉（后来提出脱亚入欧论），约翰万次郎（最早接受西方教育的日本人）等日本近代化的名人就是乘坐这艘船访问的旧金山。可以说，旧金山面朝东亚，拥抱太平洋的位置深刻影响了这座城市的气质和文化。这种气质是和地处内陆的芝加哥，和面向欧洲的纽约完全不同的。我个人认为后来嬉皮士文化和alternative culture在SF能蓬勃发展和SF的这种气质分不开。</p>
+<p>等到了186x年，旧金山人看到纽约的中央公园盖好了（1857年开放），非常羡慕，就想着『我们旧金山人也要有自己的中央公园』。然后就开始了新一轮规划。在那时候，整个旧金山西部其实没有人居住，毕竟人也没有很多，下图里面Painted Laddy所在的区域被称为Western Addition西增区，是因为是在当时城市最西边，现在已经是城市中心了（本节最开始的地图中间就是Painted laddy）。</p>
+<p>（位于西增区的Painted Lady，现在位于SF的地理中心）</p>
+<p>向西扩展的过程中一个重要发明就是Cable Car，也就是现在作为旅游景点的叮叮车，是工程师受金矿的传送带启发，在旧金山发明出来的。从此以后，终于能把车开上更陡峭的山坡，城市也因此进一步扩张。</p>
+<p>为了建造公园呢，规划者就看上最西边，也就是目前的金门公园。但实际上金门公园区域是一片沙漠，因为SF降水很少，85%集中在冬季，在城市西部自然形成了一块小沙漠。现在的金门公园实际是建在沙丘上的，这后来导致了一系列问题，甚至还在影响现在的旧金山。我们一点点吐槽。</p>
+<p>首先是植被的选择。本来有人设计种植一些本地植物，不需要太多水，但是最后大部分人还是选择种植高大的乔木和宽广的草坪，为了有一种郁郁葱葱的感觉，或者说更像纽约的中央公园，但问题是纽约和旧金山气候完全不同。结果就是金门公园需要大量的人工灌溉用水，毕竟最底下是沙子，根本存不住水。旧金山没有淡水怎么办，只能从东边调水，东边哪儿有淡水？优胜美地国家公园和太浩湖那边，下图是旧金山的供水系统。</p>
+<p>（SF的供水系统）</p>
+<p>三藩的水源主要来自最右边的Hetch Hetchy书库，这个水库实际上是从优胜美地的河流里调水。可是Yosemite是联邦资产，是美国公民的国家公园，怎么能让SF人为了个人利益随便消耗宝贵的淡水呢？因此从当初建造这个Hetch Hetchy水库开始，很多环保机构就在状告旧金山政府。不过因为SF实在缺水，最后还是批准建造了，但是联邦政府近些年已经下令要求SF从Yosemite调水量要减少15%，所以现在金门公园开始用回收净化的水来灌溉，只不过灌溉仍然是旧金山淡消耗的一大部分。</p>
+<p>另外，目前整个三藩的供水系统的前身叫Spring Valley Water Company，这个公司当时垄断了旧金山的供水系统。这家公司的创始人就是Bourn家族，他们也是淘金热中兴起的巨富家族。他们家族在湾区的另一个重要遗产就是修建了半岛地区的Filoli花园，后来家族后人把Filoli捐赠了出来，供大众参观，这里一年四季都有各种鲜花开放，是一个非常不错的景点。位置就在图中Crystal Springs Reservoir附近。</p>
+<p>（21年四月拍摄的Filoli庄园）</p>
+<p>（庄园内的布置仍然保持原来的样子）</p>
+<p class="cap">大地震，还是两次</p>
+<p>到了20世纪初，SF发展已经非常兴盛了。直到1906年4月18日的凌晨5:12，所有人都在睡梦中时，大地震来了。这是一场里氏7.9级的剧烈地震，震中恰好就在金门公园附近。因为所有人都在睡觉，加上震后引来大火，大概3000-6000人死亡，80%的建筑被摧毁，整个城市基本完全被毁灭了。大地震是如此惨烈以至于当时很多媒体报道『San Francisco In Ruins』</p>
+<p>（80%城区被破坏）</p>
+<p>地震最主要的损失来自大火，但很多火是旧金山人自己点的。因为当时的房屋保险不保地震损坏，毕竟那时候还不了解地震，但是因为保险是保火灾损失的，很多人看到自己房子被震坏了，但是没着火，为了能有赔偿就主动把自己房子点了，这也造成震后大火蔓延很广，死了不少人。</p>
+<p>震后大批难民涌入了金门公园和Presidio附近的帐篷区居住，这里后来也随时被开发，成了现在的Richmond和Sunset区（上图左边），这部分限高40 feet所以你能看到一排排的townhouse整齐的排列着。</p>
+<p>大地震对现在的旧金山城市和商业还有很多影响，比如我们现在BoA美国银行的前身就是大地震时期的意大利银行。当时意大利银行因为体量小反应迅速，在大火烧起来之前就转移了存款和客户信息。随后在灾后重建中抓住贷款需求，迅速占领了市场，后来通过并购形成了现在的美国银行。</p>
+<p>震后旧金山迅速复苏，重建工作进展很快。不过旧金山大概80多年后的1989年又经历了一次大地震，这次地震同样造成了很多损失，对现在SF城市规划的一个重要影响就是：没有了高架和高速。地震前SF正在建设高架，因为被震垮了，加上本身很多人反对高架，这件事就不了了之了，现在即使是101高速进了城也得变成local道路，过了金门大桥才重新变成高速。</p>
+<p>（SF的城市步道）</p>
+<p>这些高度限制和道路规划让旧金山了一个非常适合步行的城市，有非常多的城市主题的Hiking Tail，一路上可以走过九曲花街等各种景点，很适合边走边看，而且步行路线和开车路线完全不一样，因为SF很多单行道，步行的话你会走很多阶梯，其中很多非常漂亮。</p>
+<p>为什么说二战塑造了旧金山成了LGBTQ文化？</p>
+<p>时间推进到二战。如果夏威夷本身就是战场，那么旧金山就是处在靠近太平洋战场的最前线，因此旧金山周边修建很多堡垒，还关闭了灯塔防止日军轰炸。如果大家去湾区附近的最高峰Diablo山顶的『迪亚波罗之眼』灯塔（非常中二的名字），会发现这个灯塔从建成起一直亮着，直到珍珠港事件那天晚上。</p>
+<p>（湾区人民对二战胜利最大的贡献）</p>
+<p>战争调动起来了美国的工业生产能力，妇女开始走出家门成为劳动力。旧金山和湾区人们对二战胜利的最大贡献是造船，毕竟紧邻战场，同时又有这么大一个海湾。图上就是当时旧金山附近最大的Richmond造船厂。战争期间，SF和湾区居民平均每天会造出来一艘船，像下饺子一样，一搜搜下水，并且这里还有完善的配套维修设备。所以太平洋战争后期美国海军的船越打越多，日军因为资源不足，船越打越少。</p>
+<p>（旧金山LGBTQ文化的代表街区：Castro Street）</p>
+<p>另外大家可能不知道的是，SF的LGBTQ文化也和二战有关。战争期间，美国海军发现有同性恋倾向或者其他有『undesired behavior』的士兵后，会把他们开除，这被称为blue discharge。海军中被开除的士兵会在舰队返回旧金山补给时被放置回岸上，他们中有的人选择留在旧金山建立自己的community，这也是旧金山能逐步发展成LGBTQ文化重要聚居区的原因。其中比较标志性的地区是Castro Street有很多LGBTQ文化的店铺，还有就是每年的SF同志大游行。这也算是二战对SF城市文化的一个影响之一吧。</p>
+<p>二战后，SF的产业逐渐扩展到了整个硅谷地区，特别是芯片技术和互联网的发展，形成了新的『Gold Rush』。这部分故事也非常精彩，大家可以参考《浪潮之巅》和《硅谷之谜》这两本书。这部分我也很感兴趣，时间关系就等到下次再介绍吧。</p>
+<p class="cap">讨论区</p>
+<p>旧金山北边的Angels Island是当时对移民做身体和智力测验的地方，如果发现不合格会不允许入境，这里也是有很多历史的地点值得了解。大家在一开始还各自介绍了自己最喜欢SF的部分和自己对SF的印象。大家讨论了疫情以来SF的流浪人口（SF因为城市土地过于拥挤，很多homeless无法得到安置），Drug滥用问题，治安的恶化（砸车产业链的形成）等等。</p></section>
+  <nav class="pn"><a class="l" href="/s/56/"><small><span class="zh">上一期 · 第 56 期</span><span class="en">Previous · No. 56</span></small><span class="zh">聊聊海外博物馆的中华文物</span><span class="en">Chinese Antiquities in Museums Abroad</span></a><a class="r" href="/s/58/"><small><span class="zh">下一期 · 第 58 期</span><span class="en">Next · No. 58</span></small><span class="zh">大分流——18至19世纪欧亚经济发展差异</span><span class="en">The Great Divergence: Europe and Asia in the Eighteenth and Nineteenth Centuries</span></a></nav>
+</article></main>
+<footer>
+  <span>© 2022–2026 <span class="zh">烟霞</span><span class="en">Yanxia</span></span>
+  <a href="/gaoyutong/"><span class="zh">网站维护：高宇彤</span><span class="en">Site by Yutong Gao</span></a>
+</footer>
+<script>
+const KEY = "lang";
+let lang;
+try { lang = localStorage.getItem(KEY); } catch (e) {}
+if (lang !== "zh" && lang !== "en") lang = /^zh\b/i.test(navigator.language || "") ? "zh" : "en";
+const btn = document.getElementById("langBtn");
+function apply() { document.body.dataset.lang = lang; document.documentElement.lang = lang === "zh" ? "zh-CN" : "en"; btn.textContent = lang === "zh" ? "EN" : "中文"; }
+btn.addEventListener("click", () => { lang = lang === "zh" ? "en" : "zh"; try { localStorage.setItem(KEY, lang); } catch (e) {} apply(); });
+apply();
+</script>
+</body>
+</html>
